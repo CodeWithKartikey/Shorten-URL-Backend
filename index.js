@@ -21,7 +21,7 @@ app.use(express.json());
 
 // Setting up CORS middleware
 app.use(cors({
-  origin: [process.env.FRONTEND_URL],
+  origin: '*',
   credentials: true
 }));
 
