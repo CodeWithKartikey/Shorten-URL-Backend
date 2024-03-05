@@ -38,14 +38,10 @@ app.all('*', (req, res) => {
   .send("Oops! 404 Page not found.");
 });
 
-// Defining the port number
-const PORT = process.env.PORT || 8080;
-
 // Starting the server
-app.listen(PORT, async () => {
+app.listen(async () => {
   // Connecting to MongoDB
   await connectMongoDB();
-  console.log(`App is running at http://localhost:${PORT}/.`);
 });
 
 // Exporting the Express app instance
