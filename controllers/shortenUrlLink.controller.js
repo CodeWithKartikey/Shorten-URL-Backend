@@ -3,7 +3,7 @@ import shortid from 'shortid'; // Module for generating short IDs
 import validator from 'validator'; // Module for URL validation
 
 // Importing model
-import shortenUrlDatabase from "../models/shortenUrlLink.Model.js";
+import shortenUrlDatabase from "../models/shortenUrlLink.model.js"; //
 
 /*
   Handles requests to shorten URLs.
