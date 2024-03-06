@@ -39,7 +39,7 @@ app.all('*', (req, res) => {
 });
 
 // Defining the port number
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 // Starting the server
 app.listen(PORT, async () => {
